@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Admin</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+
+    <div class="main">
+
+      <h3>¡Regístrate! </h3>
+
+
+      <form role="form">
+        <div id="usernameField" class="form-group letra ">
+          <label id="usernameLabel" for="inputPassword">Usuario</label>
+          <input #username type="text" class="form-control" id="inputPassword">
+        </div>
+        <div id="passwField" class="form-group letra">
+          <label id="passwLabel" for="inputPassword2">Contraseña</label>
+          <input #password type="password" class="form-control" id="inputPassword2">
+        </div>
+        <div id="passwField1" class="form-group letra">
+          <label for="inputShare"> Repetir contraseña </label>
+          <input #password1 type="password" class="form-control" id="inputShare">
+        </div>
+        <br>
+        <button (click)="createUser(username.value, password.value, password1.value)"type="button" class="btn btn-success center" >Enviar</button>
+
+
+
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

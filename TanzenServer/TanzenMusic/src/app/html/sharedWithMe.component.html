@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap 3, from LayoutIt!</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+
+</head>
+<body class="backg">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12" style="padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+      <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button> */<a class="navbar-brand">TANZEN</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button> */<a id="boton" routerLink="/home" class="navbar-brand">Perfil</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+
+
+
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 class="titulogrande" style="color: white">Perfil</h1>
+
+
+  <form class="navbar-form navbar-left" role="search">
+    <h3 class="subtitulo" style="color: #ffffff">Compartidos conmigo </h3>
+  </form>
+
+
+
+  <div class="row col-xs-12 col-md-12 col-lg-12 backg" style="padding: 20pt;">
+    <table class="table grayb" style="padding: 10pt;">
+      <thead>
+      <tr>
+        <th></th>
+        <th class="titulo">TÍTULO</th>
+        <th class="titulo">GÉNERO </th>
+        <th class="titulo">ARTISTA </th>
+        <th class="titulo">AÑO </th>
+        <th class="titulo">SUBIDO POR </th>
+
+
+      </tr>
+      </thead>
+      <tr *ngFor="let song of mysongs">
+        <td ><a class='btn btn-success btn-xs' ><span class="glyphicon glyphicon-play-circle"></span></a> </td>
+
+        <td class="letra">{{song.title}}</td>
+        <td class="letra">{{song.genre}}</td>
+        <td class="letra">{{song.artist}}</td>
+        <td class="letra">{{song.date}}</td>
+        <td class="letra">{{song.owner_username}}</td>
+
+
+      </tr>
+
+    </table>
+
+
+    <div class="column add-bottom">
+      <div id="mainwrap">
+        <div id="nowPlay">
+
+        </div>
+        <div id="audiowrap">
+          <div id="audio0">
+            <audio preload id="audiomod" controls="controls">Your browser does not support HTML5 Audio!</audio>
+          </div>
+
+        </div>
+        <div id="plwrap">
+          <ul id="plList"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<footer>
+  <div class="container">
+    <p>Put together in less than five minutes by <a href="http://www.martinbean.co.uk/" rel="author">Martin Bean</a>. Uses <a href="http://twitter.github.com/bootstrap/" rel="external">Twitter Bootstrap</a> and <a href="http://ryanfait.com/sticky-footer/" rel="external">Ryan Fait’s Sticky Footer</a> and <a href="#">Aalaap Ghag’s </a>.</p>
+  </div>
+</footer>
+
+</html>

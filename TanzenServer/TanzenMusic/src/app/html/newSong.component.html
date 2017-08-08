@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Admin</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+
+    <div class="main">
+
+      <h3>Nueva canción </h3>
+
+
+      <form role="form">
+        <div class="form-group letra">
+          <label for="inputUsernameEmail">Titulo:</label>
+          <input #title type="text" class="form-control" id="inputUsernameEmail">
+        </div>
+        <div class="form-group letra">
+          <label for="inputUsernameEmail">Artista:</label>
+          <input #artist type="text" class="form-control" id="inputUsernameEmasil">
+        </div>
+        <div class="form-group letra">
+          <label class=" control-label">Género:</label>
+          <div class="selectContainer">
+            <select #genre class="form-control" name="genre">
+              <option >Selecciona un género</option>
+              <option value="Salsa">Salsa</option>
+              <option value="Reggaeton">Reggaeton</option>
+              <option value="Rock">Rock</option>
+              <option value="Bachata">Bachata</option>
+              <option value="Vallenato">Vallenato</option>
+              <option value="Hip Hop">Hip Hop</option>
+              <option value="Jazz">Jazz</option>
+              <option value="Reggae">Reggae</option>
+              <option value="Pop">Pop</option>
+              <option value="Rap">Rap</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group letra">
+          <label for="inputPassword"> Año:</label>
+          <input #year class="form-control" id="inputPassword">
+        </div>
+        <div class="form-group letra">
+          <label class=" control-label">Desea que el contenido sea:</label>
+          <div class="selectContainer">
+            <select #privacy class="form-control" name="genre">
+              <option >Selecciona una opción</option>
+              <option value="Publico">Publico</option>
+              <option value="Privado">Privado</option>
+
+            </select>
+          </div>
+        </div>
+        <label for="username" class="letra ">Compartir Con:</label>
+        <br>
+        <input #username id="username" class="integrante1 form-control" placeholder="ingrese el nombre de usuario" minlength="1">
+
+        <div class="center ">
+          <br>
+          <button type="button" (click)="checkUsername(username.value)" class="btn btn-success right"><b>Agregar</b> </button>
+          <button type="button" class="btn btn-danger left"><b>Remover</b> </button>
+          <br>
+        </div>
+
+
+
+        <textarea readonly #sharedWith id="integrantes" class="integrantes1 form-control">  </textarea>
+        <br>
+        <button type="button" class="btn btn-success center" (click)="crearCancion(title.value,artist.value,genre.value,year.value,privacy.value,sharedWith.value)">Enviar</button>
+
+
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Admin</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+
+    <div class="main">
+
+      <h3>Editar perfil </h3>
+
+
+      <form role="form">
+        <div id="usernameField" class="form-group letra ">
+          <label id="usernameLabel" for="inputPassword">Nueva contraseña:</label>
+          <input #passw1 type="password" class="form-control" id="inputPassword">
+        </div>
+        <div id="passwField" class="form-group letra">
+          <label id="passwLabel" for="inputPassword2">Confirmar contraseña: </label>
+          <input #passw2 type="password" class="form-control" id="inputPassword2">
+        </div>
+        <br>
+        <div class="center">
+        <button type="button" (click)="changePassword(passw1.value,passw2.value)" class="btn btn-success right" >Enviar</button>
+        <button type="button" (click)="deleteThisUser()" class="btn btn-danger left" >Eliminar cuenta</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

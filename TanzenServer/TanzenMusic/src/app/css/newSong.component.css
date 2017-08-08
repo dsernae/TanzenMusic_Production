@@ -1,0 +1,61 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css";
+body {
+  padding-top: 15px;
+  font-size: 12px;
+  background-color: #101010;
+}
+.main {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: #101010;
+}
+html{
+  height: 600pt;
+  background-color: #101010;
+}
+.login-or {
+  position: relative;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+.hr-or {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  color: #ffffff;
+}
+h3 {
+  text-align: center;
+  line-height: 300%;
+  color: #ffffff;
+}
+h4 {
+  text-align: center;
+  line-height: 300%;
+  color: #ffffff;
+}
+
+.center{
+  display: table;;
+  margin: 0 auto;
+}
+
+.letra{
+  color: #ffffff;
+}
